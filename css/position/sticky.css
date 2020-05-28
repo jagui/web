@@ -1,0 +1,22 @@
+/* A fixed positioned element is removed from the normal document flow, positioned relatively to the document and not affected by scrolling */ 
+.container{
+    position: relative;
+    width: 50%;
+    background-color: lightblue;
+    height: 5000px;
+    margin: auto;
+}
+
+.box-red{
+    position: fixed;
+    right: 0px;
+    top: 25px;
+}
+
+p{
+    background-color: green;
+    text-align: center;
+    margin: auto;
+    position: sticky;
+    top: 0;
+}

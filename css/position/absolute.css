@@ -1,0 +1,16 @@
+/* Absolute positioning allows positioning the element relative to its first relatively positioned ancestor. 
+The element is removed from the normal document flow */
+.container{
+    position: relative;
+}
+
+.box-red{
+    position: absolute;
+    right: 0px;
+}
+
+.box-orange{
+    background-color: orange;
+    position: absolute;
+    right: 0px;
+}

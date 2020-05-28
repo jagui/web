@@ -1,0 +1,8 @@
+/* Relative allows to change the position of an element  relative to its normal position using top, bottom, left, right. 
+The element is not removed from the normal document flow */
+
+.box-red{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
