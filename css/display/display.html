@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block, Inline &amp; inline-block samples</title>
+    <style>
+        #div-1 {
+            background-color: red;
+        }
+
+        #span-1 {
+            background-color: cyan;
+        }
+
+        #span-2 {
+            background-color: purple;
+        }
+
+        #div-2 {
+            background-color: green;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        pre {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div-1">This is a div</div>
+    <span id="span-1">This is a span</span>
+    <img id="img" src="stephen-fang-jcsDOZgKsm0-unsplash.jpg" />
+    <span id="span-2">This is another span</span>
+    <div id="div-2">This is another div</div>
+    <ul>
+        <li>&lt;divs&gt; have <strong>display:block</strong> by default which means they take up an entire line, nothing
+            can share their
+            line, they force a line break both above and below.</li>
+        <li>&lt;spans&gt; have <strong>display:inline</strong> by default which means they take up the minimum amount of
+            space possible.
+        </li>
+        <li>&lt;img&gt; have <strong>display:inline-block</strong> by default which means they behave like inline
+            elements
+            on which you can define the width and height (that's not possible for inline elements).
+        </li>
+    </ul>
+</body>
+
+</html>
