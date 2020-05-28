@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        .flexbox-container {
+            background-color: yellow;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+
+        .flexbox-item {
+            width: 200px;
+            margin: 10px;
+            border: 3px solid #333;
+            background-color: #dfdfdf;
+        }
+
+        .flexbox-item-1 {
+            min-height: 100px;
+            flex-shrink: 0;
+            align-self: flex-end;
+            order: 3;
+        }
+
+        .flexbox-item-2 {
+            min-height: 200px;
+            align-self: center;
+            flex-grow: 2;
+            flex-basis: 0;
+        }
+
+        .flexbox-item-3 {
+            min-height: 300px;
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flexbox-container">
+        <div class="flexbox-item flexbox-item-1">1</div>
+        <div class="flexbox-item flexbox-item-2">2</div>
+        <div class="flexbox-item flexbox-item-3">3</div>
+    </div>
+    <div>
+        <ul>
+            <li>
+                <em>justify-content</em> nos permite alinear los elementos según el eje principal (main axis): al
+                comienzo (flex-start, por defecto), centrado (center), espaciados (space-evenly, space-around,
+                space-between) (entre
+                o alrededor) o al final (flex-end).
+            </li>
+            <li><em>align-items</em> nos permite alinear los elementos según el eje perpendicular (cross axis):
+                estirados (stretch, por defecto), </li>
+            <li><em>flex-direction</em> permite cambiar las direcciones de los ejes. Si usamos <em>column</em> el eje
+                principal pasa a ser el vertical y el perpendicular pasar a ser el horizontal.</li>
+            <li><em>flex-shrink</em> y <em>flex-grow</em> permiten a los elementos modificar cuánto se encogen o
+                estiran. <em>flex-basis</em> indica la medida inicial desde la que se empieza a añadir espacio.</li>
+            <li><em>align-self</em> permite modificar la alineación de cada elemento, sobreescribiendo la del
+                contenedor.</li>
+            <li><em>order</em> permite modificar el orden de los elementos.</li>
+        </ul>
+    </div>
+
+</html>
